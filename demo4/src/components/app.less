@@ -1,0 +1,16 @@
+.global {
+  text-align: left;
+  font-size: 20px;
+  composes: box from "../styles/views/layout.less";
+  .title {
+    font-size: 22px;
+    // composes: heading from "../styles/views/typography.less";
+    color: red;
+  }
+  .title:before {
+    content: 'before i come'
+  }
+  .title:hover {
+    font-size: 40px;
+  }
+}
